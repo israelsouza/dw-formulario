@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
 </head>
+
 <body>
-
+    <h1>Formulário de Cadastro</h1>
     <header>
-
         <form>
 
             <div>
@@ -24,9 +25,9 @@
 
             <div>
                 <label for="">Telefone: </label>
-                <input type="tel" required>
+                <input type="tel" id="tele" placeholder="(xx) xxxxx-xxxx" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}" required>
             </div>
-
+            <script src="/js/telefone.js"></script>
             <div>
                 <label for="">Data de nascimento</label>
                 <input type="date" required>
@@ -61,7 +62,7 @@
             <button type="reset">Limpar formulário</button>
 
         </form>
-
+       
 
     </header>
 
