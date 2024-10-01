@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <h1>Formulário de Cadastro</h1>
+
     <header>
         <form>
-
+            <h1>Formulário de Cadastro</h1>
             <div>
                 <label for="">Nome completo: </label>
                 <input type="text" required>
@@ -29,37 +29,35 @@
             </div>
             <script src="/js/telefone.js"></script>
             <div>
-                <label for="">Data de nascimento</label>
-                <input type="date" required>
+                <label for="">Data de nascimento:</label>
+                <input type="date"  class="Dt" required>
             </div>
 
             <div>
                 <label for="">Escolha seu gênero:</label>
 
-                <div>
-                    <input type="radio" name="genero" id="" value="feminino" required> Feminino
-                </div>
-               
-                <div>
-                    <input type="radio" name="genero" id="" value="masculino" required> Masculino
+                <div> 
+                    <input type="radio" name="genero"  value="feminino" class="FM" required> Feminino
+                    
+                    <input type="radio" name="genero"  value="masculino" class ="MS"  required> Masculino
                 </div>
             </div>
 
             <div>
-                <textarea name="" id="" maxlength="200" placeholder="Digite sua mensagem aqui" required></textarea>
+                <textarea name="" id="texto" maxlength="200" placeholder="Digite sua mensagem aqui" required></textarea>
             </div>
 
             <div>
                 <select name="" id="" required>
-                    <option value="">Selecione o tipo desejado</option>
+                    <option value=""id ="selecao">Selecione o tipo desejado</option>
                     <option value="">Palestrante</option>
                     <option value="">Participante</option>
                     <option value="">Voluntário</option>
                 </select>
             </div>
 
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar formulário</button>
+            <button  class="enviar" type="submit">ENVIAR</button>
+            <button  class="apagar"type="reset">LIMPAR</button>
 
         </form>
        
