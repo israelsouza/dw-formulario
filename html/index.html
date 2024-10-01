@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <link rel="stylesheet" href="/css/style.css">
-    
+
 </head>
 
 <body>
@@ -25,46 +26,48 @@
 
             <div>
                 <label for="">Telefone: </label>
-                <input type="tel" id="tele" placeholder="(xx) xxxxx-xxxx" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}" required>
+                <input type="tel" id="tele" placeholder="(xx) xxxxx-xxxx" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}"
+                    required>
             </div>
-            <script src="/js/telefone.js"></script>
             <div>
                 <label for="">Data de nascimento:</label>
-                <input type="date"  class="Dt" required>
+                <input type="date" class="Dt" required>
             </div>
-
+            
             <div>
                 <label for="">Escolha seu gênero:</label>
-
-                <div> 
-                    <input type="radio" name="genero"  value="feminino" class="FM" required> Feminino
+                
+                <div>
+                    <input type="radio" name="genero" value="feminino" class="FM" required> Feminino
                     
-                    <input type="radio" name="genero"  value="masculino" class ="MS"  required> Masculino
+                    <input type="radio" name="genero" value="masculino" class="MS" required> Masculino
                 </div>
             </div>
-
+            
             <div>
                 <textarea name="" id="texto" maxlength="200" placeholder="Digite sua mensagem aqui" required></textarea>
             </div>
-
+            
             <div>
                 <select name="" id="" required>
-                    <option value=""id ="selecao">Selecione o tipo desejado</option>
+                    <option value="" id="selecao">Selecione o tipo desejado</option>
                     <option value="">Palestrante</option>
                     <option value="">Participante</option>
                     <option value="">Voluntário</option>
                 </select>
             </div>
-
-            <button  class="enviar" type="submit">ENVIAR</button>
-            <button  class="apagar"type="reset">LIMPAR</button>
-
+            
+            <button class="enviar" type="submit">ENVIAR</button>
+            <button class="apagar" type="reset">LIMPAR</button>
+            
         </form>
-       
-
+        
+        
     </header>
-
-
     
+    
+    
+    <script src="/js/telefone.js"></script>
 </body>
+
 </html>
