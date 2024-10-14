@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
+
+    <main>
+        <form>
+            <div class="inp">
+                <label for="">Nome completo: </label>
+                <input type="text" required autofocus>
+            </div>
+
+            <div class="inp">
+                <label for="">Email: </label>
+                <input type="email" required>
+            </div>
+
+            <div class="inp">
+                <label for="">Telefone: </label>
+                <input type="tel" id="tele" placeholder="(xx) xxxxx-xxxx" 
+                    required>
+            </div>
+
+            <div class="inp">
+                <label for="">Data de nascimento:</label>
+                <input type="date" class="Dt" required max="2024-10-13">
+            </div class="inp">
+            
+            <div class="inp">
+                <label for="">Escolha seu gênero:</label>
+                
+                <div>
+                    <input type="radio" name="genero" value="feminino" class="FM" required> Feminino
+                    
+                    <input type="radio" name="genero" value="masculino" class="MS" required> Masculino
+                </div>
+            </div>
+
+            <div>
+                <select name="" id="" required>
+                    <option value="" id="selecao" hidden  >Selecione o tipo desejado</option>
+                    <option value="">Palestrante</option>
+                    <option value="">Participante</option>
+                    <option value="">Voluntário</option>
+                </select>
+            </div>
+            
+            <div>
+                <textarea name="" id="texto" maxlength="200" placeholder="Digite sua mensagem aqui" required></textarea>
+            </div>
+            
+            <div>
+                <button class="btn" type="submit">ENVIAR</button>
+                <button class="btn" type="reset">LIMPAR</button>
+            </div>
+            
+        </form>
+        
+        
+    </main>
+    
+    
+    
+    <script src="/js/telefone.js"></script>
+</body>
+
+</html>
