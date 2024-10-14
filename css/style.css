@@ -4,88 +4,73 @@
 }
 
 body {
-    margin: 0 auto;
-    text-align: center;
     background-color: rgb(208, 167, 234);
 }
 
-header {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 50px;
-}
-
 h1 {
-    align-self: center;
-    margin-top: 500px;
+    text-align: center;
     margin-bottom: 10px;
-
+    padding: 20px;
 }
+
+
+main form {
+    margin: 0 auto;
+    background-color: #ccc ;
+    border-radius: 8%;
+    text-align: center;
+    padding: 25px 0;
+    max-width: 750px;
+}
+
 
 #tele {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-#texto {
-    padding: 50px;
-    margin: 20px;
+.Dt:hover {
+    cursor: text;
 }
 
-.enviar {
-    transition-duration: 900ms;
-    background-color: #0cf;
-    border-radius: 10rem;
-    width: 75px;
-    height: 50px;
-    border: 1px;
-    border-style: solid;
-    border-color: black;
-
-}
-
-.enviar:hover {
-    color: rgb(255, 255, 255);
-    background-color: blue;
-    cursor: pointer;
-
-}
-
-.apagar {
-    transition-duration: 900ms;
-    margin-top: 100px;
-    background-color: #0cf;
-    border-radius: 10rem;
-    width: 75px;
-    height: 50px;
-    padding: 10px;
-    border: 1px;
-    border-style: solid;
-    position: relative;
-    border-color: black;
-}
-
-.apagar:hover {
-    color: rgb(255, 255, 255);
-    background-color: blue;
-    transition-duration: 1s;
-    cursor: pointer;
-}
 
 .FM:hover {
     cursor: pointer;
 }
 
-.MS:hover:hover {
+.MS:hover {
     cursor: pointer;
 }
 
-.Dt:hover {
-    cursor: text;
+#texto {
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    height: 200px;
+    resize: none;
 }
 
-.selecao {
-    height: 20px;
+.btn {
+    font-size: 22px;
+    margin-top:40px ;
+    transition-duration: .9s;
+    background-color: #0cf;
+    border-radius: 10rem;
+    width: 130px;
+    height: 50px;
+    padding: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.btn:first-child{
+    margin-right: 80px;
+}
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    transition-duration: .5s;
+    cursor: pointer;
 }

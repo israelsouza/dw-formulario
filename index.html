@@ -12,29 +12,33 @@
 <body>
 
     <header>
+        <h1>Formulário de Cadastro</h1>
+    </header>
+
+    <main>
         <form>
-            <h1>Formulário de Cadastro</h1>
-            <div>
+            <div class="inp">
                 <label for="">Nome completo: </label>
-                <input type="text" required>
+                <input type="text" required autofocus>
             </div>
 
-            <div>
+            <div class="inp">
                 <label for="">Email: </label>
                 <input type="email" required>
             </div>
 
-            <div>
+            <div class="inp">
                 <label for="">Telefone: </label>
-                <input type="tel" id="tele" placeholder="(xx) xxxxx-xxxx" pattern="([0-9]{2}) [0-9]{5}-[0-9]{4}"
+                <input type="tel" id="tele" placeholder="(xx) xxxxx-xxxx" 
                     required>
             </div>
-            <div>
+
+            <div class="inp">
                 <label for="">Data de nascimento:</label>
-                <input type="date" class="Dt" required>
-            </div>
+                <input type="date" class="Dt" required max="2024-10-13">
+            </div class="inp">
             
-            <div>
+            <div class="inp">
                 <label for="">Escolha seu gênero:</label>
                 
                 <div>
@@ -43,27 +47,29 @@
                     <input type="radio" name="genero" value="masculino" class="MS" required> Masculino
                 </div>
             </div>
-            
-            <div>
-                <textarea name="" id="texto" maxlength="200" placeholder="Digite sua mensagem aqui" required></textarea>
-            </div>
-            
+
             <div>
                 <select name="" id="" required>
-                    <option value="" id="selecao">Selecione o tipo desejado</option>
+                    <option value="" id="selecao" hidden  >Selecione o tipo desejado</option>
                     <option value="">Palestrante</option>
                     <option value="">Participante</option>
                     <option value="">Voluntário</option>
                 </select>
             </div>
             
-            <button class="enviar" type="submit">ENVIAR</button>
-            <button class="apagar" type="reset">LIMPAR</button>
+            <div>
+                <textarea name="" id="texto" maxlength="200" placeholder="Digite sua mensagem aqui" required></textarea>
+            </div>
+            
+            <div>
+                <button class="btn" type="submit">ENVIAR</button>
+                <button class="btn" type="reset">LIMPAR</button>
+            </div>
             
         </form>
         
         
-    </header>
+    </main>
     
     
     
